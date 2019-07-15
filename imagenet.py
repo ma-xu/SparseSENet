@@ -39,7 +39,7 @@ parser.add_argument('--bs', default=512, type=int, help='batch size')
 parser.add_argument('--es', default=100, type=int, help='epoch size')
 parser.add_argument('--manualSeed',default=123, type=int, help='manual seed')
 parser.add_argument('--imagenet', default=1000, type=int, help='dataset classes number')
-parser.add_argument('--datapath', default='/home/xm0036/Datasets/ImageNet32', type=str, help='dataset path')
+parser.add_argument('--datapath', default='/home/qc0025/Dataset/ImageNet32', type=str, help='dataset path')
 args = parser.parse_args()
 print(args.netName)
 
