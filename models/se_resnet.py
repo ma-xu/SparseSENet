@@ -14,6 +14,7 @@ class SELayer(nn.Module):
     def __init__(self, channel, reduction=16,activation='Sigmoid',factor=1):
         super(SELayer, self).__init__()
         self.factor = factor
+        self.activation = activation
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
         self.fc = nn.Sequential(
             nn.Linear(channel, channel // reduction, bias=False),
@@ -29,7 +30,10 @@ class SELayer(nn.Module):
         b, c, _, _ = x.size()
         y = self.avg_pool(x).view(b, c)
         y = self.fc(y)
-        y = self.act(self.factor*y).view(b, c, 1, 1)
+        if str.lower(self.activation) == 'sigmoid':
+            y = self.act(self.factor*y).view(b, c, 1, 1)
+        else:
+            y = (self.act(self.factor * y)*c).view(b, c, 1, 1)
         return x * y.expand_as(x)
 
 
@@ -148,9 +152,9 @@ def SEResNet152(num_classes=1000,activation='Sigmoid',factor=1):
 
 
 def mydemo():
-    net = SEResNet18(activation='Softmax',factor=2)
+    net = SEResNet50(activation='Softmax',factor=2)
     y = net((torch.randn(10,3,32,32)))
     print(y.size())
 
 
-mydemo()
+# mydemo()
