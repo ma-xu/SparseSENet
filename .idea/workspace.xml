@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eae55482-27c8-49ee-bca0-79896010a829" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/Si1_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/Si1_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/Si2_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/Si2_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/Si5_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/Si5_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/Si8_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/Si8_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/So1_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/So1_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/So2_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/So2_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/So5_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/So5_ciafr100.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts_cifar100/So8_ciafr100.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_cifar100/So8_ciafr100.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cifar.py" beforeDir="false" afterPath="$PROJECT_DIR$/cifar.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,73 +18,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/Si1_ciafr100.sh">
+        <entry file="file://$PROJECT_DIR$/imagenet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/Si2_ciafr100.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/Si5_ciafr100.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/Si8_ciafr100.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/So1_ciafr100.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/So2_ciafr100.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/So5_ciafr100.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="365">
+              <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-end-line="39" selection-end-column="77" />
+              <folding>
+                <element signature="e#116#153#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts_cifar100/So8_ciafr100.sh">
+        <entry file="file://$PROJECT_DIR$/cifar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="270">
+              <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#104#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,7 +63,6 @@
         <option value="$PROJECT_DIR$/models/se_resnet.py" />
         <option value="$PROJECT_DIR$/imagenet.py" />
         <option value="$PROJECT_DIR$/records/cifar100/demo.txt" />
-        <option value="$PROJECT_DIR$/cifar.py" />
         <option value="$PROJECT_DIR$/scripts_cifar100/Sigmoid1_ciafr100.sh" />
         <option value="$PROJECT_DIR$/scripts_cifar100/So3_ciafr100.sh" />
         <option value="$PROJECT_DIR$/scripts_cifar100/Si1_ciafr100.sh" />
@@ -129,6 +73,7 @@
         <option value="$PROJECT_DIR$/scripts_cifar100/So2_ciafr100.sh" />
         <option value="$PROJECT_DIR$/scripts_cifar100/So5_ciafr100.sh" />
         <option value="$PROJECT_DIR$/scripts_cifar100/So8_ciafr100.sh" />
+        <option value="$PROJECT_DIR$/cifar.py" />
       </list>
     </option>
   </component>
@@ -283,7 +228,7 @@
       <workItem from="1563206509439" duration="203000" />
       <workItem from="1563228457210" duration="81000" />
       <workItem from="1563293887904" duration="448000" />
-      <workItem from="1563834001417" duration="1178000" />
+      <workItem from="1563834001417" duration="1298000" />
     </task>
     <servers />
   </component>
@@ -296,7 +241,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4676000" />
+    <option name="totallyTimeSpent" value="4796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="708" extended-state="0" />
@@ -450,26 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imagenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="36" column="82" lean-forward="true" selection-start-line="34" selection-end-line="36" selection-end-column="82" />
-          <folding>
-            <element signature="e#116#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cifar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#104#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/se_resnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -543,6 +468,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imagenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-end-line="39" selection-end-column="77" />
+          <folding>
+            <element signature="e#116#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cifar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#104#1" />
+          </folding>
         </state>
       </provider>
     </entry>

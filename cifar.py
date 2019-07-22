@@ -37,7 +37,7 @@ parser.add_argument('--factor', default=1, type=int, help='factor for activation
 parser.add_argument('--bs', default=512, type=int, help='batch size')
 parser.add_argument('--es', default=150, type=int, help='epoch size')
 parser.add_argument('--cifar', default=100, type=int, help='dataset classes number')
-parser.add_argument('--fix_seed', default=123, help='Fix random seed')
+parser.add_argument('--manualSeed',default=123, type=int, help='manual seed')
 args = parser.parse_args()
 
 
