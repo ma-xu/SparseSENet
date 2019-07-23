@@ -102,7 +102,7 @@ if args.resume:
     # Load checkpoint.
     print('==> Resuming from checkpoint..')
     assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
-    checkpoint_path = './checkpoint/ckpt_cifar_'+str(args.cifar)+'_'+args.netName+'.t7'
+    checkpoint_path = './checkpoint/ckpt_cifar_'+str(args.cifar)+'_'+args.netName+args.activation+str(args.factor)+'.t7'
     checkpoint = torch.load(checkpoint_path)
     net.load_state_dict(checkpoint['net'])
     best_acc = checkpoint['acc']
@@ -140,7 +140,7 @@ def train(epoch):
         progress_bar(batch_idx, len(trainloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
             % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
-    file_path='../records/cifar100/cifar_' + str(args.cifar) + '_' +args.netName+'_train.txt'
+    file_path='../records/cifar100/cifar_' + str(args.cifar) + '_' +args.netName+args.activation+str(args.factor)+'_train.txt'
     record_str=str(epoch)+'\t'+"%.3f"%(train_loss/(batch_idx+1))+'\t'+"%.3f"%(100.*correct/total)+'\n'
     write_record(file_path,record_str)
 
@@ -165,7 +165,7 @@ def test(epoch):
             progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                 % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
-    file_path = '../records/cifar100/cifar_' + str(args.cifar) + '_' +args.netName+ '_test.txt'
+    file_path = '../records/cifar100/cifar_' + str(args.cifar) + '_' +args.netName+args.activation+str(args.factor)+ '_test.txt'
     record_str = str(epoch) + '\t' + "%.3f" % (test_loss / (batch_idx + 1)) + '\t' + "%.3f" % (
                 100. * correct / total) + '\n'
     write_record(file_path, record_str)
@@ -181,7 +181,7 @@ def test(epoch):
         }
         if not os.path.isdir('checkpoint'):
             os.mkdir('checkpoint')
-        save_path = './checkpoint/ckpt_cifar_' + str(args.cifar) + '_' + args.netName + '.t7'
+        save_path = './checkpoint/ckpt_cifar_' + str(args.cifar) + '_'+args.netName+args.activation+str(args.factor) + '.t7'
         torch.save(state, save_path)
         best_acc = acc
 
@@ -192,7 +192,7 @@ for epoch in range(start_epoch, start_epoch+args.es):
 
 
 # write statistics to files
-statis_path = '../records/cifar100/STATS_'+args.netName+'.txt'
+statis_path = '../records/cifar100/STATS_'+args.netName+args.activation+str(args.factor)+'.txt'
 if not os.path.exists(statis_path):
     # os.makedirs(statis_path)
     os.system(r"touch {}".format(statis_path))
